@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>中国朝代知识测验</title>
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body {
+  margin: 0 auto;
+  padding: 28px 22px 48px;
+  max-width: 960px;
+  background: #fbf9f5;
+  color: #2f2a24;
+  font-family: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "Source Han Sans SC", sans-serif;
+  line-height: 1.65;
+}
+h1 { font-size: 1.7rem; margin: 0 0 6px; letter-spacing: 0.04em; }
+h2 { font-size: 1.15rem; margin: 28px 0 10px; }
+p { margin: 6px 0; }
+.subtitle { color: #7a6f63; font-size: 0.9rem; }
+.meta { color: #7a6f63; font-size: 0.85rem; margin-top: 18px; }
+table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+th, td { border-bottom: 1px solid #e5ded2; padding: 7px 8px; text-align: left; vertical-align: top; }
+th { background: #f0e9dd; font-weight: 600; white-space: nowrap; }
+td.num { white-space: nowrap; color: #5c5348; }
+.timeline { margin: 18px 0 8px; }
+.row { display: grid; grid-template-columns: 190px 1fr; gap: 10px; align-items: center; margin: 7px 0; }
+.label { display: flex; flex-direction: column; line-height: 1.25; }
+.label .name { font-weight: 600; }
+.label .years { color: #7a6f63; font-size: 0.78rem; }
+.track { position: relative; height: 16px; background: #f0e9dd; border-radius: 8px; }
+.bar { position: absolute; top: 0; height: 16px; border-radius: 8px; }
+.card { background: #fff; border: 1px solid #e7dfd2; border-radius: 10px; padding: 16px 18px; margin: 14px 0; }
+.question { font-weight: 600; margin: 0 0 8px; }
+ol.options { list-style: none; margin: 0; padding: 0; }
+ol.options li { padding: 4px 0; }
+.key { display: inline-block; min-width: 1.6em; font-weight: 600; color: #8b5e34; }
+.answer { margin-top: 10px; padding: 8px 10px; background: #f6f1e7; border-left: 3px solid #8b5e34; font-size: 0.9rem; }
+.answer strong { color: #7f4f24; }
+.blank { margin-top: 10px; color: #a59a8c; font-size: 0.85rem; letter-spacing: 0.1em; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 0; padding: 0; list-style: none; }
+.tags li { border: 1px solid #ddd2c1; background: #fff; border-radius: 999px; padding: 2px 12px; font-size: 0.9rem; }
+.columns { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 8px; }
+.columns ol { margin: 4px 0; padding-left: 1.4em; }
+.columns ul { margin: 4px 0; padding-left: 0; list-style: none; }
+.columns li { padding: 3px 0; }
+@page { size: A4; margin: 14mm; }
+@media print {
+  body { background: #fff; max-width: none; padding: 0; font-size: 10.5pt; }
+  .no-print { display: none !important; }
+  .card, .row, tr { break-inside: avoid; page-break-inside: avoid; }
+  a { color: inherit; text-decoration: none; }
+}
+</style>
+</head>
+<body>
+<h1>中国朝代知识测验</h1>
+<p class="subtitle">共 10 道题，含参考答案。</p>
+<section class="card">
+<p class="question">1. 「五代十国」的起止年代是？</p>
+<ol class="options">
+<li><span class="key">A</span>907 年 — 960 年</li>
+<li><span class="key">B</span>589 年 — 618 年</li>
+<li><span class="key">C</span>1368 年 — 1644 年</li>
+<li><span class="key">D</span>公元前 770 年 — 公元前 256 年</li>
+</ol>
+<div class="answer">答案：A. 907 年 — 960 年　解析：五代十国起于公元 907 年，止于公元 960 年，共 54 年。</div>
+</section>
+<section class="card">
+<p class="question">2. 「明」的开国君主是？</p>
+<ol class="options">
+<li><span class="key">A</span>朱元璋</li>
+<li><span class="key">B</span>司马炎</li>
+<li><span class="key">C</span>汤</li>
+<li><span class="key">D</span>刘秀</li>
+</ol>
+<div class="answer">答案：A. 朱元璋　解析：明由朱元璋建立。</div>
+</section>
+<section class="card">
+<p class="question">3. 「秦」的起止年代是？</p>
+<ol class="options">
+<li><span class="key">A</span>公元前 221 年 — 公元前 207 年</li>
+<li><span class="key">B</span>907 年 — 960 年</li>
+<li><span class="key">C</span>220 年 — 280 年</li>
+<li><span class="key">D</span>589 年 — 618 年</li>
+</ol>
+<div class="answer">答案：A. 公元前 221 年 — 公元前 207 年　解析：秦起于公元前 221 年，止于公元前 207 年，共 15 年。</div>
+</section>
+<section class="card">
+<p class="question">4. 「元」的开国君主是？</p>
+<ol class="options">
+<li><span class="key">A</span>曹丕</li>
+<li><span class="key">B</span>忽必烈</li>
+<li><span class="key">C</span>禹</li>
+<li><span class="key">D</span>周平王姬宜臼</li>
+</ol>
+<div class="answer">答案：B. 忽必烈　解析：元由忽必烈建立。</div>
+</section>
+<section class="card">
+<p class="question">5. 「北宋」的起止年代是？</p>
+<ol class="options">
+<li><span class="key">A</span>420 年 — 589 年</li>
+<li><span class="key">B</span>220 年 — 280 年</li>
+<li><span class="key">C</span>公元前 1046 年 — 公元前 771 年</li>
+<li><span class="key">D</span>960 年 — 1127 年</li>
+</ol>
+<div class="answer">答案：D. 960 年 — 1127 年　解析：北宋起于公元 960 年，止于公元 1127 年，共 168 年。</div>
+</section>
+<section class="card">
+<p class="question">6. 「清」的起止年代是？</p>
+<ol class="options">
+<li><span class="key">A</span>317 年 — 420 年</li>
+<li><span class="key">B</span>589 年 — 618 年</li>
+<li><span class="key">C</span>420 年 — 589 年</li>
+<li><span class="key">D</span>1644 年 — 1912 年</li>
+</ol>
+<div class="answer">答案：D. 1644 年 — 1912 年　解析：清起于公元 1644 年，止于公元 1912 年，共 269 年。</div>
+</section>
+<section class="card">
+<p class="question">7. 「东晋」的都城是？</p>
+<ol class="options">
+<li><span class="key">A</span>大都（今北京）</li>
+<li><span class="key">B</span>建康、洛阳</li>
+<li><span class="key">C</span>建康（今江苏南京）</li>
+<li><span class="key">D</span>阳城（今河南登封）</li>
+</ol>
+<div class="answer">答案：C. 建康（今江苏南京）　解析：东晋定都建康（今江苏南京）。</div>
+</section>
+<section class="card">
+<p class="question">8. 「五代十国」的开国君主是？</p>
+<ol class="options">
+<li><span class="key">A</span>朱温</li>
+<li><span class="key">B</span>周平王姬宜臼</li>
+<li><span class="key">C</span>禹</li>
+<li><span class="key">D</span>忽必烈</li>
+</ol>
+<div class="answer">答案：A. 朱温　解析：五代十国由朱温建立。</div>
+</section>
+<section class="card">
+<p class="question">9. 「东汉」的开国君主是？</p>
+<ol class="options">
+<li><span class="key">A</span>刘秀</li>
+<li><span class="key">B</span>司马炎</li>
+<li><span class="key">C</span>汤</li>
+<li><span class="key">D</span>禹</li>
+</ol>
+<div class="answer">答案：A. 刘秀　解析：东汉由刘秀建立。</div>
+</section>
+<section class="card">
+<p class="question">10. 「明」的都城是？</p>
+<ol class="options">
+<li><span class="key">A</span>开封、洛阳</li>
+<li><span class="key">B</span>建康、洛阳</li>
+<li><span class="key">C</span>应天（今江苏南京）、北京</li>
+<li><span class="key">D</span>阳城（今河南登封）</li>
+</ol>
+<div class="answer">答案：C. 应天（今江苏南京）、北京　解析：明定都应天（今江苏南京）、北京。</div>
+</section>
+<p class="meta">由 dynasties 生成 · MIT License · eastyou</p>
+</body>
+</html>

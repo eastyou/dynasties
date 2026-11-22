@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>中国朝代配对练习</title>
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body {
+  margin: 0 auto;
+  padding: 28px 22px 48px;
+  max-width: 960px;
+  background: #fbf9f5;
+  color: #2f2a24;
+  font-family: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "Source Han Sans SC", sans-serif;
+  line-height: 1.65;
+}
+h1 { font-size: 1.7rem; margin: 0 0 6px; letter-spacing: 0.04em; }
+h2 { font-size: 1.15rem; margin: 28px 0 10px; }
+p { margin: 6px 0; }
+.subtitle { color: #7a6f63; font-size: 0.9rem; }
+.meta { color: #7a6f63; font-size: 0.85rem; margin-top: 18px; }
+table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+th, td { border-bottom: 1px solid #e5ded2; padding: 7px 8px; text-align: left; vertical-align: top; }
+th { background: #f0e9dd; font-weight: 600; white-space: nowrap; }
+td.num { white-space: nowrap; color: #5c5348; }
+.timeline { margin: 18px 0 8px; }
+.row { display: grid; grid-template-columns: 190px 1fr; gap: 10px; align-items: center; margin: 7px 0; }
+.label { display: flex; flex-direction: column; line-height: 1.25; }
+.label .name { font-weight: 600; }
+.label .years { color: #7a6f63; font-size: 0.78rem; }
+.track { position: relative; height: 16px; background: #f0e9dd; border-radius: 8px; }
+.bar { position: absolute; top: 0; height: 16px; border-radius: 8px; }
+.card { background: #fff; border: 1px solid #e7dfd2; border-radius: 10px; padding: 16px 18px; margin: 14px 0; }
+.question { font-weight: 600; margin: 0 0 8px; }
+ol.options { list-style: none; margin: 0; padding: 0; }
+ol.options li { padding: 4px 0; }
+.key { display: inline-block; min-width: 1.6em; font-weight: 600; color: #8b5e34; }
+.answer { margin-top: 10px; padding: 8px 10px; background: #f6f1e7; border-left: 3px solid #8b5e34; font-size: 0.9rem; }
+.answer strong { color: #7f4f24; }
+.blank { margin-top: 10px; color: #a59a8c; font-size: 0.85rem; letter-spacing: 0.1em; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 0; padding: 0; list-style: none; }
+.tags li { border: 1px solid #ddd2c1; background: #fff; border-radius: 999px; padding: 2px 12px; font-size: 0.9rem; }
+.columns { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 8px; }
+.columns ol { margin: 4px 0; padding-left: 1.4em; }
+.columns ul { margin: 4px 0; padding-left: 0; list-style: none; }
+.columns li { padding: 3px 0; }
+@page { size: A4; margin: 14mm; }
+@media print {
+  body { background: #fff; max-width: none; padding: 0; font-size: 10.5pt; }
+  .no-print { display: none !important; }
+  .card, .row, tr { break-inside: avoid; page-break-inside: avoid; }
+  a { color: inherit; text-decoration: none; }
+}
+</style>
+</head>
+<body>
+<h1>中国朝代配对练习</h1>
+<p class="subtitle">共 8 组配对。</p>
+<p class="subtitle">将左栏朝代与右栏成就 / 都城配对，把字母填在括号内。</p>
+<div class="columns">
+<div><h2>朝代</h2>
+<ol><li>三国（　　）</li>
+<li>东晋（　　）</li>
+<li>东周（　　）</li>
+<li>唐（　　）</li>
+<li>清（　　）</li>
+<li>西周（　　）</li>
+<li>商（　　）</li>
+<li>南宋（　　）</li></ol></div>
+<div><h2>成就 / 都城</h2>
+<ul><li><span class="key">A</span>临安（今浙江杭州）</li>
+<li><span class="key">B</span>甲骨文与青铜文明高度发达。</li>
+<li><span class="key">C</span>镐京（今陕西西安）</li>
+<li><span class="key">D</span>康乾盛世，奠定近代中国的疆域基础。</li>
+<li><span class="key">E</span>长安（今陕西西安）</li>
+<li><span class="key">F</span>春秋战国诸侯争霸，诸子百家争鸣。</li>
+<li><span class="key">G</span>建康（今江苏南京）</li>
+<li><span class="key">H</span>魏、蜀、吴鼎立，是中国著名的分裂割据时期。</li></ul></div>
+</div>
+<h2>参考答案</h2>
+<ol class="answers">
+<li>1. 三国 — H</li>
+<li>2. 东晋 — G</li>
+<li>3. 东周 — F</li>
+<li>4. 唐 — E</li>
+<li>5. 清 — D</li>
+<li>6. 西周 — C</li>
+<li>7. 商 — B</li>
+<li>8. 南宋 — A</li>
+</ol>
+<p class="meta">由 dynasties 生成 · MIT License · eastyou</p>
+</body>
+</html>

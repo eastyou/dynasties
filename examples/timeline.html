@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>中国朝代时间轴</title>
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body {
+  margin: 0 auto;
+  padding: 28px 22px 48px;
+  max-width: 960px;
+  background: #fbf9f5;
+  color: #2f2a24;
+  font-family: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "Source Han Sans SC", sans-serif;
+  line-height: 1.65;
+}
+h1 { font-size: 1.7rem; margin: 0 0 6px; letter-spacing: 0.04em; }
+h2 { font-size: 1.15rem; margin: 28px 0 10px; }
+p { margin: 6px 0; }
+.subtitle { color: #7a6f63; font-size: 0.9rem; }
+.meta { color: #7a6f63; font-size: 0.85rem; margin-top: 18px; }
+table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+th, td { border-bottom: 1px solid #e5ded2; padding: 7px 8px; text-align: left; vertical-align: top; }
+th { background: #f0e9dd; font-weight: 600; white-space: nowrap; }
+td.num { white-space: nowrap; color: #5c5348; }
+.timeline { margin: 18px 0 8px; }
+.row { display: grid; grid-template-columns: 190px 1fr; gap: 10px; align-items: center; margin: 7px 0; }
+.label { display: flex; flex-direction: column; line-height: 1.25; }
+.label .name { font-weight: 600; }
+.label .years { color: #7a6f63; font-size: 0.78rem; }
+.track { position: relative; height: 16px; background: #f0e9dd; border-radius: 8px; }
+.bar { position: absolute; top: 0; height: 16px; border-radius: 8px; }
+.card { background: #fff; border: 1px solid #e7dfd2; border-radius: 10px; padding: 16px 18px; margin: 14px 0; }
+.question { font-weight: 600; margin: 0 0 8px; }
+ol.options { list-style: none; margin: 0; padding: 0; }
+ol.options li { padding: 4px 0; }
+.key { display: inline-block; min-width: 1.6em; font-weight: 600; color: #8b5e34; }
+.answer { margin-top: 10px; padding: 8px 10px; background: #f6f1e7; border-left: 3px solid #8b5e34; font-size: 0.9rem; }
+.answer strong { color: #7f4f24; }
+.blank { margin-top: 10px; color: #a59a8c; font-size: 0.85rem; letter-spacing: 0.1em; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 0; padding: 0; list-style: none; }
+.tags li { border: 1px solid #ddd2c1; background: #fff; border-radius: 999px; padding: 2px 12px; font-size: 0.9rem; }
+.columns { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 8px; }
+.columns ol { margin: 4px 0; padding-left: 1.4em; }
+.columns ul { margin: 4px 0; padding-left: 0; list-style: none; }
+.columns li { padding: 3px 0; }
+@page { size: A4; margin: 14mm; }
+@media print {
+  body { background: #fff; max-width: none; padding: 0; font-size: 10.5pt; }
+  .no-print { display: none !important; }
+  .card, .row, tr { break-inside: avoid; page-break-inside: avoid; }
+  a { color: inherit; text-decoration: none; }
+}
+</style>
+</head>
+<body>
+<h1>中国朝代时间轴</h1>
+<p class="subtitle">共 19 个朝代 / 时期，跨度 3982 年。</p>
+<div class="timeline">
+<div class="row"><div class="label"><span class="name">夏</span><span class="years">公元前 2070 年 — 公元前 1600 年</span></div><div class="track"><span class="bar" style="left:0.00%;width:11.80%;background:#8b5e34" title="夏 公元前 2070 年 — 公元前 1600 年"></span></div></div>
+<div class="row"><div class="label"><span class="name">商</span><span class="years">公元前 1600 年 — 公元前 1046 年</span></div><div class="track"><span class="bar" style="left:11.80%;width:13.91%;background:#9c6644" title="商 公元前 1600 年 — 公元前 1046 年"></span></div></div>
+<div class="row"><div class="label"><span class="name">西周</span><span class="years">公元前 1046 年 — 公元前 771 年</span></div><div class="track"><span class="bar" style="left:25.72%;width:6.91%;background:#7f5539" title="西周 公元前 1046 年 — 公元前 771 年"></span></div></div>
+<div class="row"><div class="label"><span class="name">东周</span><span class="years">公元前 770 年 — 公元前 256 年</span></div><div class="track"><span class="bar" style="left:32.65%;width:12.91%;background:#a47148" title="东周 公元前 770 年 — 公元前 256 年"></span></div></div>
+<div class="row"><div class="label"><span class="name">秦</span><span class="years">公元前 221 年 — 公元前 207 年</span></div><div class="track"><span class="bar" style="left:46.43%;width:0.80%;background:#6c584c" title="秦 公元前 221 年 — 公元前 207 年"></span></div></div>
+<div class="row"><div class="label"><span class="name">西汉</span><span class="years">公元前 202 年 — 公元 8 年</span></div><div class="track"><span class="bar" style="left:46.91%;width:5.27%;background:#7d6b5d" title="西汉 公元前 202 年 — 公元 8 年"></span></div></div>
+<div class="row"><div class="label"><span class="name">东汉</span><span class="years">25 年 — 220 年</span></div><div class="track"><span class="bar" style="left:52.61%;width:4.90%;background:#8a7a68" title="东汉 25 年 — 220 年"></span></div></div>
+<div class="row"><div class="label"><span class="name">三国</span><span class="years">220 年 — 280 年</span></div><div class="track"><span class="bar" style="left:57.51%;width:1.51%;background:#9d8420" title="三国 220 年 — 280 年"></span></div></div>
+<div class="row"><div class="label"><span class="name">西晋</span><span class="years">280 年 — 316 年</span></div><div class="track"><span class="bar" style="left:59.02%;width:0.90%;background:#6b705c" title="西晋 280 年 — 316 年"></span></div></div>
+<div class="row"><div class="label"><span class="name">东晋</span><span class="years">317 年 — 420 年</span></div><div class="track"><span class="bar" style="left:59.94%;width:2.59%;background:#5c6b73" title="东晋 317 年 — 420 年"></span></div></div>
+<div class="row"><div class="label"><span class="name">南北朝</span><span class="years">420 年 — 589 年</span></div><div class="track"><span class="bar" style="left:62.53%;width:4.24%;background:#4f5d75" title="南北朝 420 年 — 589 年"></span></div></div>
+<div class="row"><div class="label"><span class="name">隋</span><span class="years">589 年 — 618 年</span></div><div class="track"><span class="bar" style="left:66.78%;width:0.80%;background:#546a7b" title="隋 589 年 — 618 年"></span></div></div>
+<div class="row"><div class="label"><span class="name">唐</span><span class="years">618 年 — 907 年</span></div><div class="track"><span class="bar" style="left:67.50%;width:7.26%;background:#3d5a80" title="唐 618 年 — 907 年"></span></div></div>
+<div class="row"><div class="label"><span class="name">五代十国</span><span class="years">907 年 — 960 年</span></div><div class="track"><span class="bar" style="left:74.76%;width:1.33%;background:#476b6b" title="五代十国 907 年 — 960 年"></span></div></div>
+<div class="row"><div class="label"><span class="name">北宋</span><span class="years">960 年 — 1127 年</span></div><div class="track"><span class="bar" style="left:76.09%;width:4.19%;background:#5f7161" title="北宋 960 年 — 1127 年"></span></div></div>
+<div class="row"><div class="label"><span class="name">南宋</span><span class="years">1127 年 — 1279 年</span></div><div class="track"><span class="bar" style="left:80.29%;width:3.82%;background:#6d6875" title="南宋 1127 年 — 1279 年"></span></div></div>
+<div class="row"><div class="label"><span class="name">元</span><span class="years">1279 年 — 1368 年</span></div><div class="track"><span class="bar" style="left:84.10%;width:2.24%;background:#7c6a5a" title="元 1279 年 — 1368 年"></span></div></div>
+<div class="row"><div class="label"><span class="name">明</span><span class="years">1368 年 — 1644 年</span></div><div class="track"><span class="bar" style="left:86.34%;width:6.93%;background:#806d5b" title="明 1368 年 — 1644 年"></span></div></div>
+<div class="row"><div class="label"><span class="name">清</span><span class="years">1644 年 — 1912 年</span></div><div class="track"><span class="bar" style="left:93.27%;width:6.73%;background:#6b5b53" title="清 1644 年 — 1912 年"></span></div></div>
+</div>
+<h2>时间轴比例尺</h2>
+<p class="subtitle">起点：公元前 2070 年 — 公元前 1600 年　终点：1644 年 — 1912 年　跨度：3982 年</p>
+<h2>朝代明细</h2>
+<table>
+<thead><tr><th>序号</th><th>朝代</th><th>别名</th><th>起止</th><th>都城</th><th>开国君主</th><th>代表成就</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>夏</td><td>夏朝、夏后氏</td><td class="num">公元前 2070 年 — 公元前 1600 年</td><td>阳城（今河南登封）</td><td>禹</td><td>建立世袭制，开启「家天下」传统。</td></tr>
+<tr><td>2</td><td>商</td><td>商朝、殷商、殷</td><td class="num">公元前 1600 年 — 公元前 1046 年</td><td>殷（今河南安阳）</td><td>汤</td><td>甲骨文与青铜文明高度发达。</td></tr>
+<tr><td>3</td><td>西周</td><td>西周王朝、宗周</td><td class="num">公元前 1046 年 — 公元前 771 年</td><td>镐京（今陕西西安）</td><td>周武王姬发</td><td>推行分封制与宗法制，奠定礼乐文明。</td></tr>
+<tr><td>4</td><td>东周</td><td>东周王朝、春秋战国</td><td class="num">公元前 770 年 — 公元前 256 年</td><td>洛邑（今河南洛阳）</td><td>周平王姬宜臼</td><td>春秋战国诸侯争霸，诸子百家争鸣。</td></tr>
+<tr><td>5</td><td>秦</td><td>秦朝、大秦</td><td class="num">公元前 221 年 — 公元前 207 年</td><td>咸阳（今陕西咸阳）</td><td>秦始皇嬴政</td><td>首次统一中国，统一文字、度量衡并推行郡县制。</td></tr>
+<tr><td>6</td><td>西汉</td><td>前汉、西汉王朝</td><td class="num">公元前 202 年 — 公元 8 年</td><td>长安（今陕西西安）</td><td>刘邦</td><td>开通丝绸之路，独尊儒术，国力长期强盛。</td></tr>
+<tr><td>7</td><td>东汉</td><td>后汉、东汉王朝</td><td class="num">25 年 — 220 年</td><td>洛阳（今河南洛阳）</td><td>刘秀</td><td>蔡伦改进造纸术，佛教开始传入中原。</td></tr>
+<tr><td>8</td><td>三国</td><td>三国时期、魏蜀吴</td><td class="num">220 年 — 280 年</td><td>洛阳、成都、建业</td><td>曹丕</td><td>魏、蜀、吴鼎立，是中国著名的分裂割据时期。</td></tr>
+<tr><td>9</td><td>西晋</td><td>西晋王朝、司马晋</td><td class="num">280 年 — 316 年</td><td>洛阳（今河南洛阳）</td><td>司马炎</td><td>灭吴统一全国，八王之乱后迅速衰亡。</td></tr>
+<tr><td>10</td><td>东晋</td><td>东晋王朝、江左晋</td><td class="num">317 年 — 420 年</td><td>建康（今江苏南京）</td><td>司马睿</td><td>衣冠南渡，与北方十六国长期对峙。</td></tr>
+<tr><td>11</td><td>南北朝</td><td>南北朝时期、南朝北朝</td><td class="num">420 年 — 589 年</td><td>建康、洛阳</td><td>刘裕</td><td>南北政权并立，民族融合与佛教艺术兴盛。</td></tr>
+<tr><td>12</td><td>隋</td><td>隋朝、大隋</td><td class="num">589 年 — 618 年</td><td>大兴（今陕西西安）</td><td>杨坚</td><td>开凿大运河，创立科举制，重建统一帝国。</td></tr>
+<tr><td>13</td><td>唐</td><td>唐朝、大唐</td><td class="num">618 年 — 907 年</td><td>长安（今陕西西安）</td><td>李渊</td><td>贞观之治与开元盛世，文化开放、商贸繁荣。</td></tr>
+<tr><td>14</td><td>五代十国</td><td>五代、五代十国时期</td><td class="num">907 年 — 960 年</td><td>开封、洛阳</td><td>朱温</td><td>北方五代更替、南方十国并立。</td></tr>
+<tr><td>15</td><td>北宋</td><td>北宋王朝、赵宋</td><td class="num">960 年 — 1127 年</td><td>东京开封府（今河南开封）</td><td>赵匡胤</td><td>经济文化繁荣，活字印刷与纸币交子出现。</td></tr>
+<tr><td>16</td><td>南宋</td><td>南宋王朝、南渡宋</td><td class="num">1127 年 — 1279 年</td><td>临安（今浙江杭州）</td><td>赵构</td><td>偏安江南，海外贸易与理学兴盛。</td></tr>
+<tr><td>17</td><td>元</td><td>元朝、大元</td><td class="num">1279 年 — 1368 年</td><td>大都（今北京）</td><td>忽必烈</td><td>疆域辽阔，行省制影响深远。</td></tr>
+<tr><td>18</td><td>明</td><td>明朝、大明</td><td class="num">1368 年 — 1644 年</td><td>应天（今江苏南京）、北京</td><td>朱元璋</td><td>郑和下西洋，营建北京城并修筑明长城。</td></tr>
+<tr><td>19</td><td>清</td><td>清朝、大清</td><td class="num">1644 年 — 1912 年</td><td>北京</td><td>爱新觉罗·福临</td><td>康乾盛世，奠定近代中国的疆域基础。</td></tr>
+</tbody>
+</table>
+<p class="meta">由 dynasties 生成 · MIT License · eastyou</p>
+</body>
+</html>
